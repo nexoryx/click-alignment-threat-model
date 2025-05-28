@@ -78,4 +78,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for details.
 
 ## 📜 License
 
-This project is licensed under the MIT License. See [`LICENSE`](./LICENSE) for details.
+All content in this repository is dedicated to the public domain under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license. You are free to use, modify, and distribute it without restriction. See [`LICENSE`](./LICENSE) for details.
