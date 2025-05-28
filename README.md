@@ -37,13 +37,13 @@ Lower TTIS implies higher behavioral risk, because fewer or stealthier steps are
 
 ## 🧠 Real-World Examples
 
-| CVE ID          | CAS | CSM | TTIS | Notes                                      |
-|-----------------|-----|-----|------|---------------------------------------------|
-| CVE-2021-30860  | 0   | 0   | 0    | Zero-click exploit (Image I/O parsing)     |
-| CVE-2017-0199   | 1   | 0   | 1    | Malicious DOCX file, opened by user        |
-| CVE-2018-8174   | 1   | +1  | 2    | Requires scripting be enabled + trigger    |
-| CVE-2019-0709   | 2   | +1  | 3    | Requires authenticated access + trigger    |
-| UAC             | +1  | +1  | +2   | Warning dialog creates user friction       |
+| CVE ID          | CAS | CSM | TTIS | Notes                                                       |
+|-----------------|-----|-----|------|-------------------------------------------------------------|
+| CVE-2021-30860  | 0   | -1  | -1   | True zero-click; no user interaction required               |
+| CVE-2025-27143  | 1   | -1  | 0    | User redirected on login; standard login page               |
+| CVE-2018-8174   | 1   | +1  | 2    | Link or doc triggers script; scripting must be enabled      |
+| CVE-2019-0709   | 2   | +1  | 3    | Exploit requires network setup and user-triggered execution |
+| UAC-protected exploit | +1 | +1 | +2 | User clicks and sees a UAC prompt                         |
 
 See the [examples/](./examples) folder for more.
 
@@ -60,3 +60,22 @@ See the [examples/](./examples) folder for more.
 
 ## 📁 Repository Structure
 
+
+
+---
+
+## 🤝 Contributing
+
+CATM is a living model. Contributions are welcome, especially:
+
+- New TTIS breakdowns of known CVEs
+- Improvements or critiques of the scoring model
+- UX/security feedback on behavioral assumptions
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for details.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See [`LICENSE`](./LICENSE) for details.
